@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Items</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
@@ -31,5 +32,46 @@
         </div>
     </nav>
 </header>
+<main>
+    <div>
+        <form>
+            <div>
+                <input type="text" class="form-control" id="item">
+                <button type="button" class="btn" id="item_search">Search</button>
+                <button type="button" class="btn" id="add_new_item">Add New</button>
+            </div>
+        </form>
+    </div>
+    <div>
+        <table class="table table-striped text-center">
+            <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Description</th>
+                <th scope="col">Unit Price</th>
+                <th scope="col">Stock</th>
+            </tr>
+            <tr>
+                <td>0001</td>
+                <td>Rice</td>
+                <td>300</td>
+                <td>340KG</td>
+            </tr>
+            <tr>
+                <td>0002</td>
+                <td>Nut</td>
+                <td>500</td>
+                <td>2KG</td>
+            </tr>
+            <tr>
+                <td>0003</td>
+                <td>Date</td>
+                <td>500</td>
+                <td>5KG</td>
+            </tr>
+            </thead>
+        </table>
+    </div>
+</main>
 </body>
 </html>
