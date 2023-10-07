@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Orders</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
@@ -31,5 +32,67 @@
         </div>
     </nav>
 </header>
+<main>
+    <div>
+        <form>
+            <div>
+                <input type="text" class="form-control" id="order">
+                <button type="button" class="btn" id="order_search">Search</button>
+                <button type="button" class="btn" id="add_new_order">Add New</button>
+            </div>
+        </form>
+    </div>
+    <div>
+        <table class="table table-striped text-center">
+            <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Customer Id</th>
+                <th scope="col">Date</th>
+                <th scope="col">Payment</th>
+                <th scope="col">Total</th>
+                <th scope="col">Save</th>
+            </tr>
+            <tr>
+                <td>0001</td>
+                <td>Thisara</td>
+                <td>0003</td>
+                <td>2023-10-02</td>
+                <td>8000</td>
+                <td>7500</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>0002</td>
+                <td>Kavishka</td>
+                <td>0001</td>
+                <td>2023-10-02</td>
+                <td>10000</td>
+                <td>9000</td>
+                <td>1000</td>
+            </tr>
+            <tr>
+                <td>0003</td>
+                <td>perera</td>
+                <td>0007</td>
+                <td>2023-10-02</td>
+                <td>5000</td>
+                <td>3500</td>
+                <td>1500</td>
+            </tr>
+            <tr>
+                <td>0004</td>
+                <td>Danindu</td>
+                <td>0003</td>
+                <td>2023-10-03</td>
+                <td>15000</td>
+                <td>14000</td>
+                <td>1000</td>
+            </tr>
+            </thead>
+        </table>
+    </div>
+</main>
 </body>
 </html>
