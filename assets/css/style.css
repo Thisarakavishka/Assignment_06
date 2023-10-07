@@ -1,0 +1,23 @@
+body > main > div:first-child > form > div {
+    padding: 50px;
+}
+
+body > main > div:first-child > form > div > input {
+    float: left;
+    width: 250px;
+}
+
+body > main > div:first-child > form > div > button:nth-child(2) {
+    background-color: #3D8BFD;
+    color: white;
+}
+
+body > main > div:first-child > form > div > button:nth-child(3) {
+    float: right;
+    color: white;
+    background-color: #28A745;
+}
+
+body > main > div:nth-child(2) {
+    padding: 50px;
+}

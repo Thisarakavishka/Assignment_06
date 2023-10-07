@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Customers</title>
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
@@ -31,5 +32,46 @@
         </div>
     </nav>
 </header>
+<main>
+    <div>
+        <form>
+            <div>
+                <input type="text" class="form-control" id="customer">
+                <button type="button" class="btn" id="customer_search">Search</button>
+                <button type="button" class="btn" id="add_new_customer">Add New</button>
+            </div>
+        </form>
+    </div>
+    <div>
+        <table class="table table-striped text-center">
+            <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Address</th>
+            </tr>
+            <tr>
+                <td>0001</td>
+                <td>Thisara</td>
+                <td>Kavishka</td>
+                <td>Moratuwa</td>
+            </tr>
+            <tr>
+                <td>0002</td>
+                <td>Dasun</td>
+                <td>Madawa</td>
+                <td>Horana</td>
+            </tr>
+            <tr>
+                <td>0003</td>
+                <td>Isanka</td>
+                <td>Suresh</td>
+                <td>Baduruliya</td>
+            </tr>
+            </thead>
+        </table>
+    </div>
+</main>
 </body>
 </html>
