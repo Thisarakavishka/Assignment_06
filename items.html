@@ -33,44 +33,70 @@
     </nav>
 </header>
 <main>
-    <div>
-        <form>
-            <div>
-                <input type="text" class="form-control" id="item">
-                <button type="button" class="btn" id="item_search">Search</button>
-                <button type="button" class="btn" id="add_new_item">Add New</button>
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col">
+                <h4 class="header">Manage Item</h4>
             </div>
-        </form>
-    </div>
-    <div>
-        <table class="table table-striped text-center">
-            <thead>
-            <tr>
-                <th scope="col">Id</th>
-                <th scope="col">Description</th>
-                <th scope="col">Unit Price</th>
-                <th scope="col">Stock</th>
-            </tr>
-            <tr>
-                <td>0001</td>
-                <td>Rice</td>
-                <td>300</td>
-                <td>340KG</td>
-            </tr>
-            <tr>
-                <td>0002</td>
-                <td>Nut</td>
-                <td>500</td>
-                <td>2KG</td>
-            </tr>
-            <tr>
-                <td>0003</td>
-                <td>Date</td>
-                <td>500</td>
-                <td>5KG</td>
-            </tr>
-            </thead>
-        </table>
+        </div>
+        <div class="content row">
+            <div class="order-form col col-lg-6 col-md-12 col-sm-12 col-12">
+                <form>
+                    <div>
+                        <label for="itemId" class="form-label">Item Id</label>
+                        <input type="number" class="form-control" id="itemId">
+                    </div>
+                    <div>
+                        <label for="description" class="form-label">Description</label>
+                        <input type="text" class="form-control" id="description">
+                    </div>
+                    <div>
+                        <label for="unitPrice" class="form-label">Unit Price</label>
+                        <input type="number" class="form-control" id="unitPrice">
+                    </div>
+                    <div>
+                        <label for="stock" class="form-label">Stock</label>
+                        <input type="number" class="form-control" id="stock">
+                    </div>
+                    <div class="mt-5">
+                        <button type="submit" class="btn btn-success" id="item_submit">Submit</button>
+                        <button type="button" class="btn btn-primary" id="item_update">Update</button>
+                        <button type="button" class="btn btn-danger" id="item_delete">Delete</button>
+                        <button type="reset" class="btn btn-warning">Reset</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col col-lg-6 col-md-12 col-sm-12 col-12 d-flex flex-column align-items-end">
+                <table class="table table-striped text-center ">
+                    <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Unit Price</th>
+                        <th scope="col">Stock</th>
+                    </tr>
+                    <tr>
+                        <td>0001</td>
+                        <td>Rice</td>
+                        <td>300</td>
+                        <td>340KG</td>
+                    </tr>
+                    <tr>
+                        <td>0002</td>
+                        <td>Nut</td>
+                        <td>500</td>
+                        <td>2KG</td>
+                    </tr>
+                    <tr>
+                        <td>0003</td>
+                        <td>Date</td>
+                        <td>500</td>
+                        <td>5KG</td>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
     </div>
 </main>
 </body>
