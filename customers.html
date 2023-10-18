@@ -33,44 +33,66 @@
     </nav>
 </header>
 <main>
-    <div>
-        <form>
-            <div>
-                <input type="text" class="form-control" id="customer">
-                <button type="button" class="btn" id="customer_search">Search</button>
-                <button type="button" class="btn" id="add_new_customer">Add New</button>
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col">
+                <h4 class="header">Manage Customer</h4>
             </div>
-        </form>
-    </div>
-    <div>
-        <table class="table table-striped text-center">
-            <thead>
-            <tr>
-                <th scope="col">Id</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Address</th>
-            </tr>
-            <tr>
-                <td>0001</td>
-                <td>Thisara</td>
-                <td>Kavishka</td>
-                <td>Moratuwa</td>
-            </tr>
-            <tr>
-                <td>0002</td>
-                <td>Dasun</td>
-                <td>Madawa</td>
-                <td>Horana</td>
-            </tr>
-            <tr>
-                <td>0003</td>
-                <td>Isanka</td>
-                <td>Suresh</td>
-                <td>Baduruliya</td>
-            </tr>
-            </thead>
-        </table>
+        </div>
+        <div class="content row">
+            <div class="order-form col col-lg-6 col-md-12 col-sm-12 col-12">
+                <form>
+                    <div>
+                        <label for="customerId" class="form-label">Customer Id</label>
+                        <input type="number" class="form-control" id="customerId">
+                    </div>
+                    <div>
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="fullName">
+                    </div>
+                    <div>
+                        <label for="address" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="address">
+                    </div>
+                    <div class="mt-5">
+                        <button type="submit" class="btn btn-success" id="customer_submit">Submit</button>
+                        <button type="button" class="btn btn-primary" id="customer_update">Update</button>
+                        <button type="button" class="btn btn-danger" id="customer_delete">Delete</button>
+                        <button type="reset" class="btn btn-warning">Reset</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col col-lg-6 col-md-12 col-sm-12 col-12 d-flex flex-column align-items-end">
+                <table class="table table-striped text-center ">
+                    <thead>
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Address</th>
+                    </tr>
+                    <tr>
+                        <td>0001</td>
+                        <td>Thisara</td>
+                        <td>Kavishka</td>
+                        <td>Moratuwa</td>
+                    </tr>
+                    <tr>
+                        <td>0002</td>
+                        <td>Dasun</td>
+                        <td>Madawa</td>
+                        <td>Horana</td>
+                    </tr>
+                    <tr>
+                        <td>0003</td>
+                        <td>Isanka</td>
+                        <td>Suresh</td>
+                        <td>Baduruliya</td>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
     </div>
 </main>
 </body>
